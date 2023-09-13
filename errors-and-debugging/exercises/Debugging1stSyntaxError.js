@@ -3,8 +3,8 @@
 
 let launchReady = false;
 let fuelLevel = 17000;
-
-if (fuelLevel >= 20000 {
+// ")" was missing...its fixed...
+if (fuelLevel >= 20000) {
    console.log('Fuel level cleared.');
    launchReady = true;
 } else {

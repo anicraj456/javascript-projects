@@ -25,6 +25,8 @@ if (crewStatus && computerStatus === 'green'){
    console.log('WARNING: Crew or computer not ready!');
    launchReady = false;
 }
+//adding console.log 
+console.log("launchReady = ", launchReady);
 
 // if (launchReady) {
 //    console.log('10, 9, 8, 7, 6, 5, 4, 3, 2, 1...');
