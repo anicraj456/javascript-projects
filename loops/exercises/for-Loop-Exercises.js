@@ -66,8 +66,8 @@ for(let i=0;i<reverse.length;i++ ){
   let odd=[];
   
   for ( let i = 0 ; 1 <= arr1.length ; i ++ ) {
-    if (arr1[i] == ( i % 2 == 0 )){
-      even[i]=arr1[i].slice(i);
-       console.log(even[i]);
+    //if (arr1[i] < arr1.length){
+          even =( arr1[i] % 2 == 0 );
+          console.log(even);
      } 
-    }
+    
