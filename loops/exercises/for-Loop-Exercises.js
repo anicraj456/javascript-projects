@@ -14,14 +14,15 @@
 
     for(let j=2;j<30;j++){
         j=j+1;
-        //console.log("Odd Value: " + j);
+        //console.log("Odd Numbers: " + j);
     }
     
     //c. Print the EVEN numbers 12 to -14 in descending order, one number per line.
-    let a=-14;
-    for (let k=12;k<=20;k-2){
-      console.log("the value of K" + k);
+    
+    for (let k=12;k>=-14;k-=2){
+     //console.log("Even Numbers:" + k);
     }
+  
 /*Exercise #2: 
 Initialize two variables to hold the string “LaunchCode” and the array [1, 5, ‘LC101’, ‘blue’, 42].
 
@@ -31,7 +32,7 @@ Construct ``for`` loops to accomplish the following tasks:
   b. Print each character of the string - in reverse order - to a new line. */ 
  
   //Initializing variable
-/*
+
  let str = "LaunchCode";
  let arr = [1, 5, 'LC101', 'blue', 42];
  let reverse = "";
@@ -39,28 +40,34 @@ Construct ``for`` loops to accomplish the following tasks:
  // a. Print each element of the array to a new line.
 
  for (let j= 0;j<arr.length;j++){
-   console.log("Element of Array : " + arr[j]);
+   //console.log("Element of Array : " + arr[j]);
  }
-*/
+
  // b. Print each character of the string - in reverse order - to a new line. */ 
 
- /*for (let i = 0; i < str.length; i++) {
+ for (let i = 0; i < str.length; i++) {
   reverse = str[i] + reverse;
 }
-console.log("Reversed String: " + reverse); */
+//console.log("Reversed String: " + reverse); 
+
+let tempArray = [];
+
+for(let i=0;i<reverse.length;i++ ){
+  tempArray[i] = reverse.charAt(i);
+  //console.log("Reversed Character: " +tempArray[i]);
+}
 
 /*Exercise #3:Construct a for loop that sorts the array [2, 3, 13, 18, -5, 38, -10, 11, 0, 104] into two new arrays:
   a. One array contains the even numbers, and the other holds the odds.
   b. Print the arrays to confirm the results. */
 
-  /*let arr1= [2, 3, 13, 18, -5, 38, -10, 11, 0, 104];
+  let arr1= [2, 3, 13, 18, -5, 38, -10, 11, 0, 104];
   let even=[];
   let odd=[];
   
-
-  for ( let a = 0 ; a <= arr1.length ; a ++ ) {
-    if (arr1[a] === ( a % 2 == 0 )){
-       console.log(even);
+  for ( let i = 0 ; 1 <= arr1.length ; i ++ ) {
+    if (arr1[i] == ( i % 2 == 0 )){
+      even[i]=arr1[i].slice(i);
+       console.log(even[i]);
      } 
     }
-*/
