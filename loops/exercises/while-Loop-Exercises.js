@@ -21,7 +21,13 @@ while ((fuelLevel==int )&&(fuelLevel >5000)&&(fuelLevel<30000))
 
 
 //b. Use a second loop to query the user for the number of astronauts (up to a maximum of 7). Validate the entry.
-  ` `
+  
+let astronautsAboard = input.question('Please enter number of Astronauts:');
+while(astronautsAboard>7){
+  fuelLevel= input.question('Invalid input. Please enter a positive number:');
+
+  console.log("Astronaut aboard: " + astronautsAboard);
+}
   
   
   
