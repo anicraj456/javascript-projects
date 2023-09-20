@@ -4,46 +4,87 @@ let protoArray3 = "space delimited string";
 let protoArray4 = "Comma-spaces, might, require, typing, caution";
 
 strings = [protoArray1, protoArray2, protoArray3, protoArray4];
- 
-console.log(protoArray1.includes(" "));
+
+console.log(reverseCommas(protoArray1));
+console.log(semiDash(protoArray2));
+console.log(reverseSpaces(protoArray3));
+console.log(commaSpace(protoArray4));
 //2) 
-function reverseCommas() {
+function reverseCommas(protoArrays) {
 	//TODO: 1. create and instantiate your variables.
-	let check ;
+	let check;
 	let output;
+	let checkedArray;
 	//TODO: 2. write the code required for this step
-      output = check.split(",");
+      if(protoArrays.includes(",")){
+		check = true;
+	  }else{
+		check =false;
+	  }
+     if (check){
+		checkedArray = protoArrays.split(",").reverse();
+		output = checkedArray.join(",");
+	 }
 
 
 	//NOTE: For the code to run properly, you must return your output.  this needs to be the final line of code within the function's { }.
 	return output;
-}
+    }
 
 //3)
-function semiDash() {
+   function semiDash(protoArrays) {
 	let check;
 	let output;
+	let checkedArray;
 //TODO: write the code required for this step
-
+   if(protoArrays.includes(";")){
+	check = true;
+  }else{
+	check =false;
+  }
+  if (check){
+	checkedArray=protoArrays.split(";").sort();
+	output = checkedArray.join("-");
+ }
   
 	return output;
 }
 
 //4)
-function reverseSpaces() {
+function reverseSpaces(protoArrays) {
 	let check;
 	let output;
+	let checkedArray;
   //TODO: write the code required for this step
+  if(protoArrays.includes(" ")){
+	check = true;
+  }else{
+	check =false;
+  }
+  if (check){
+	checkedArray=protoArrays.split(" ").sort().reverse();
+	output = checkedArray.join(" ");
 
+ }
 	return output;
 }
 
 //5)
-function commaSpace() {
+function commaSpace(protoArrays) {
 	let check;
 	let output;
+	let checkedArray;
 	//TODO: write the code required for this step
-  
+	if(protoArrays.includes(", ")){
+		check = true;
+	  }else{
+		check =false;
+	  }
+	if (check){
+		checkedArray=protoArrays.split(", ").reverse();
+		output = checkedArray.join(",");
+
+	}
 	return output;
 }
 
@@ -53,5 +94,5 @@ module.exports = {
 	reverseCommas : reverseCommas,
 	semiDash: semiDash, 
 	reverseSpaces : reverseSpaces,
-	commaSpace : commaSpace
-};
+	commaSpace : commaSpace,
+}

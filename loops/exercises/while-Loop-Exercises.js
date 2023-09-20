@@ -9,14 +9,17 @@ let altitude = 0;
 
   const input = require('readline-sync');
   fuelLevel = input.question('Please enter a positive number:');
-while ((fuelLevel == isNaN)&&(fuelLevel >5000)&&(fuelLevel<30000))
+ /*while ((fuelLevel == isNaN)&&(fuelLevel >5000)&&(fuelLevel<30000))
  {
    fuelLevel= input.question('Invalid input. Please enter a positive number:');
    console.log(fuelLevel);
+}*/
+while (fuelLevel <= 5000 || fuelLevel > 30000 || isNaN(fuelLevel)) {
+
+  fuelLevel = input.question("Invaild input!.Enter the starting fuel level: "); 
+  console.log(fuelLevel);
 }
-//while (fuelLevel <= 5000 || fuelLevel > 30000 || isNaN(fuelLevel)) {
-  //fuelLevel = input.question("Enter the starting fuel level: ");
-//}
+
 
 
 //b. Use a second loop to query the user for the number of astronauts (up to a maximum of 7). Validate the entry.
