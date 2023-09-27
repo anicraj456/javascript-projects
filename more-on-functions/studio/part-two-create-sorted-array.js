@@ -20,10 +20,47 @@ function findMinValue(arr){
 
 //Your function here...
 
-/* BONUS MISSION: Refactor your sorting function to use recursion below:
- */
+//function to Sort each array in ascending order.
 
-//Sample arrays for testing:
+function ascendingOrder(arr){
+  let ascenArray=[];
+  while(arr.length>0){
+      let mini = findMinValue(arr);
+      ascenArray.push(mini);
+      arr.splice(arr.indexOf(mini), 1);
+  }
+  return ascenArray;
+}
 let nums1 = [5, 10, 2, 42];
 let nums2 = [-2, 0, -10, -44, 5, 3, 0, 3];
 let nums3 = [200, 5, 4, 10, 8, 5, -3.3, 4.4, 0];
+
+console.log("Ascending order of Sample Array1: " + ascendingOrder(nums1));
+console.log("Ascending order of Sample Array2: " + ascendingOrder(nums2));
+console.log("Ascending order of Sample Array3: " + ascendingOrder(nums3));
+//console.log(nums1);//check if its empty array
+
+/* BONUS MISSION: Refactor your sorting function to use recursion below:
+ */
+
+function recursionSort(arr,arrSorted=[]){
+if(arr.length===0){
+  return arrSorted;
+}
+let mini = findMinValue(arr);
+arrSorted.push(mini);
+arr.splice(arr.indexOf(mini), 1);
+return recursionSort(arr,arrSorted);
+}
+
+//Sample arrays for testing:
+
+let nums11 = [5, 10, 2, 42];
+let nums21 = [-2, 0, -10, -44, 5, 3, 0, 3];
+let nums31 = [200, 5, 4, 10, 8, 5, -3.3, 4.4, 0];
+
+
+
+console.log("Recursion sorted array: " + recursionSort(nums11));
+console.log("Recursion sorted array: " + recursionSort(nums21));
+console.log("Recursion sorted array: " + recursionSort(nums31));
