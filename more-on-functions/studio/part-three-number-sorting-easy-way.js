@@ -13,7 +13,7 @@ console.log("Array in Ascending order of Array1: " + nums1);
 
 //Sort each array in decending order.
 
-nums3.sort(function(a, b){
+nums1.sort(function(a, b){
     return b-a;
 });
-console.log("Array in Decending order of Array3: " + nums3);
+console.log("Array in Decending order of Array1: " + nums1);
