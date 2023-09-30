@@ -82,25 +82,25 @@ function crewReports(waterBear){   //change parameter for diffirent objects
 
 // Start an animal race!
 
-let personForFitness=[superChimpOne, salamander, superChimpTwo, dogBreed, waterBear];
+let forFitness=[superChimpOne, salamander, superChimpTwo, dogBreed, waterBear];
 
-let results = fitnessTest(personForFitness); //printing result in new line
+let results = fitnessTest(forFitness); //printing result in new line
 console.log("Result for fitness test: ");
 
 for (let i=0;i<results.length;i++){
    console.log(results[i]);
 }
 
-function fitnessTest(personForFitness){
+function fitnessTest(forFitness){
    let results = [], numOfSteps, turns;
-   for (let i = 0; i < personForFitness.length; i++){
+   for (let i = 0; i < forFitness.length; i++){
        numOfSteps = 0;
        turns = 0;
        while(numOfSteps < 20){
-       numOfSteps = numOfSteps + personForFitness[i].move();
+       numOfSteps = numOfSteps + forFitness[i].move();
        turns++;
        }
-       results.push(`${personForFitness[i].name} took ${turns} turns to take 20 steps. \n`);
+       results.push(`${forFitness[i].name} took ${turns} turns to take 20 steps. \n`);
    }
    return results;
    
