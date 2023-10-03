@@ -8,4 +8,4 @@ function randomFromArray(arr){
 
 //TODO: Export the randomFromArray function.
 
-module.exports = randomFromArray;
+module.exports = randomFromArray; //exports randonfrom array here..

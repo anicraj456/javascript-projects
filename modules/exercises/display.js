@@ -18,7 +18,7 @@ function printAll(names, tests, scores){
   }
   return;
 }
-module.exports = printAll;
+module.exports = printAll; //Exports printall.
 
 function printStudentScores(index,students,tests,scores){
   console.log(`Test results for ${students[index]}:`);
