@@ -1,4 +1,4 @@
-let tortoiseOne = {
+/*let tortoiseOne = {
    species: "Galapagos Tortoise",
    name: "Pete",
    weight: 919,
@@ -12,7 +12,7 @@ for (item in tortoiseOne){
    console.log(item + "," + tortoiseOne[item]);
 }
 
-/*let tortoiseOne = {
+let tortoiseOne = {
    age: 150,
    species: "Galapagos Tortoise",
    diet: ["pumpkins", "lettuce", "cabbage"]
@@ -25,7 +25,7 @@ let tortoiseTwo = {
 };
 console.log(tortoiseOne === tortoiseTwo);
 console.log(tortoiseOne == tortoiseTwo);
-console.log(tortoiseOne.age === tortoiseTwo.age);*/
+console.log(tortoiseOne.age === tortoiseTwo.age);
 
 console.log(Math.floor(-3.87));
 console.log(Math.random(-3.87));
@@ -44,4 +44,17 @@ console.log(Math.trunc(-3.87));
 console.log(Math.round(12.3456789)*100/100);
 console.log(Math.round(12.3456789*100)/100);
 console.log(Math.round(12.3456789*10000)/10000);
-console.log(Math.round(12.3456789)*10000/10000);
+console.log(Math.round(12.3456789)*10000/10000);*/
+
+
+let students ={
+   names:["Gerard Darris", "Banana cat", "Apple Dog", "Mango Zebra","Kiwi Kiwi"],
+   scores: [100, 95, 74, 82,91]
+};
+for(let i=0;i,students["names"].length;i++){
+   let output="";
+   for(items in students){
+      output += `${students[items][i]}`
+   }
+   console.log(output.slice(0,-2));
+}
