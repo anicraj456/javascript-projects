@@ -99,24 +99,7 @@ function lowOxygen(arr){
   }
   return candidate;
 };
-/*function lowOxygen(arr){
-  let candidates = [];
-  for(let i=0;i<arr.length;i++){
-    candidates[i]= arr[i].o2Used(1);
-    
-  }
-  candidates.sort();
-  //console.log("candidates "+candidates);
 
-  for(let i=0;i<arr.length;i++){
-    let candi = arr[i];
-    if(candi.o2Used(1) === candidates[0]){
-      //console.log("comparison successful "+ candi);
-      return candi;
-    }
-  }
-
-}*/
 let selectedOxygen = lowOxygen(crew);
 
 oxygenExpended(selectedOxygen,3000,24000);
