@@ -11,5 +11,6 @@ function divide(numerator,denominator){
         throw Error("cannot divide by zero");
     }
     return numerator/denominator;
-
 };
+
+divide(4,0);
