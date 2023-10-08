@@ -13,4 +13,4 @@ function divide(numerator,denominator){
     return numerator/denominator;
 };
 
-divide(4,0);
+//divide(4,0);
