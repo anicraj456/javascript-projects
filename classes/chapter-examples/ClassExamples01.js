@@ -19,3 +19,8 @@ console.log(fox);
 console.log(fox.age, fox.color);
 
 //Try modifying or adding properties below.
+let lion = new Astronaut('lion', 10, 50);
+console.log(lion);
+console.log(lion.age);
+lion.kids = 2;
+console.log("kids:" + lion.kids);
