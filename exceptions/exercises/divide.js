@@ -6,11 +6,11 @@
 
 // Code your divide function here:
 
+
 function divide(numerator,denominator){
     if( denominator === 0){
         throw Error("cannot divide by zero");
     }
     return numerator/denominator;
 };
-
 //divide(4,0);

@@ -27,7 +27,6 @@ let studentLabs = [
 
 //gradeLabs(studentLabs);
 
-
 let studentLabs2 = [
   {
       student: 'Blake',
@@ -48,5 +47,4 @@ let studentLabs2 = [
       }
   }
 ];
-
 gradeLabs(studentLabs2);
