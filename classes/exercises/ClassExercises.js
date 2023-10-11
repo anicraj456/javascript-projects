@@ -42,7 +42,7 @@ class Novel extends Book {
 
 // Declare the objects for exercises 2 and 3 here:
 let goodNovel = new Novel("Pride and Prejudice","Jane Austen",1813, 1111111111111 , 432, 32, "no");
-let manualBook = new Manual ("Top Secret Shuttle Building Manual", "Redacted", 2013, 0000000000000, 1147, 1, "no");
+let manualBook = new Manual ("Top Secret Shuttle Building Manual", "Redacted", 2013, 0, 1147, 1, "no");
 
 // Code exercises 4 & 5 here:
 console.log(goodNovel);
