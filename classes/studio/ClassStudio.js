@@ -22,11 +22,12 @@ class CrewCandidate {
     }
 
     status(){
-        if(this.average >= 90){
+        let totalAve = this.average();
+        if(totalAve >= 90){
             return "Accepted ";
-        }else if(this.aveScore >= 80){
+        }else if(totalAve >= 80){
             return "Reserve";
-        }else if(this.aveScore >= 70){
+        }else if(totalAve >= 70){
             return "Probationary";
         }else {
             return "Rejected";
@@ -46,9 +47,17 @@ bubba.addscore(83);
 //console.log("Bubba new scores: " + bubba.scores);
 //merry.average();
 
-let candidates = [bubba,merry,gator];
-for(let i = 0;i<candidates.length;i++){
+let candidates = [bubba, merry, gator];
+for(let i = 0;i < candidates.length; i++){
     console.log(`${candidates[i].name} earned an average test score of ${candidates[i].average()}% and has a status of ${candidates[i].status()}.`);
 }
 
 //Part 4 - Use the methods to boost Glad Gator’s status to Reserve or higher. How many tests will it take to reach Reserve status? How many to reach Accepted? Remember, scores cannot exceed 100%.
+
+let countReverse = 0;
+while(gator.status() != "Reverse"){
+ gator.addscore(100);
+ countReverse++;
+}
+console.log(`Gator took ${countReverse} times to reach perfect scores`);
+console.log(gator.scores);
