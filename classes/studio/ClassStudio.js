@@ -56,9 +56,9 @@ for(let i = 0;i < candidates.length; i++){
 //Part 4 - Use the methods to boost Glad Gator’s status to Reserve or higher. How many tests will it take to reach Reserve status? How many to reach Accepted? Remember, scores cannot exceed 100%.
 
 
-let countReverse = 0;
+/*let countReverse = 0;
 console.log(gator.status());
-/*while(gator.status() !== "Reverse"){
+while(gator.status() == "Accepted"){
     console.log("INSIDE WHILE LOOP");
  gator.addscore(100);
  countReverse++;
