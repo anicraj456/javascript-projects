@@ -49,6 +49,7 @@ console.log(gator);
 bubba.addscore(83);
 console.log("Bubba new scores: " + bubba.scores);
 merry.average();
+console.log("Merry Average: " + merry.average() + "%");
 
 let candidates = [bubba, merry, gator];
 for(let i = 0;i < candidates.length; i++){
