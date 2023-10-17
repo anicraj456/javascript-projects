@@ -43,7 +43,9 @@ let gator = new CrewCandidate ("Glad Gator", 225, [75,78,62]);
 console.log(bubba);
 console.log(merry);
 console.log(gator);
+
 //Add methods for adding scores, averaging scores and determining candidate status as described in the studio activity.
+
 bubba.addscore(83);
 console.log("Bubba new scores: " + bubba.scores);
 merry.average();
@@ -52,7 +54,6 @@ let candidates = [bubba, merry, gator];
 for(let i = 0;i < candidates.length; i++){
     console.log(`${candidates[i].name} earned an average test score of ${candidates[i].average()}% and has a status of ${candidates[i].status()}.`);
 }
-
 
 //Part 4 - Use the methods to boost Glad Gator’s status to Reserve or higher. How many tests will it take to reach Reserve status? How many to reach Accepted? Remember, scores cannot exceed 100%.
 
@@ -64,5 +65,6 @@ while(gator.status() !== "Reserve"){
  //console.log(gator.scores);
  reverse++;
 }
+
 console.log(`Gator took ${reverse} times to reach perfect scores`);
 console.log("Gator perfect scores: " +  gator.scores);
