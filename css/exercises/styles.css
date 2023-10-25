@@ -3,27 +3,22 @@
 
 body {
   background-color: yellow;
-  text-align: center;
 }
 
-.center{
-    
+.center{ 
   text-align: center;
 }
 
 #cool-text{
-     
-    color: blue;
+  color: blue;
 }
 
 #list-color{
-
-  color: blueviolet;
+  color: rgb(230, 22, 29);
 }
 
-
 p {
-  color: green;
+  color: rgb(42, 9, 9);
 }
 
 h1 {
