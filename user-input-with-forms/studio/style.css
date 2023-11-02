@@ -1,0 +1,60 @@
+h1{
+    font-size: 36px;
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(10, 80, 129);
+}
+
+p{
+    font-size: 28px;
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(44, 70, 163);
+}
+
+body{
+    font-style: italic;
+    background-color: rgb(202, 163, 194);
+    text-align: center;
+    background-position: center;
+    margin-bottom: auto;
+    padding: 50px;
+
+}
+
+form{
+    width:auto;
+    margin: auto;
+
+}
+
+label{
+    font-style: italic;
+    font-size: 28px;
+    color: blueviolet;
+    margin: auto;
+}
+
+#web{
+    width: auto;
+    margin: auto;
+    padding: 9px;
+    font-size: 13px;
+}
+
+.input{
+    text-align: center;
+    width: 70vw;
+    height: auto;
+    background-color: rgb(68, 224, 172);
+    margin: auto;
+    display: block;
+    padding: 50px;
+    
+}
+
+#submit{
+    font-size: 18px;
+    font-weight: bolder;
+    background-color: rgb(230, 106, 18);
+}
