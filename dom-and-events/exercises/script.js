@@ -17,7 +17,7 @@ function init () {
 
     missionAbort.addEventListener("mouseout", function( event ) {
         event.target.style.backgroundColor = "";
-     });s
+     });
 
     missionAbort.addEventListener('click',function(){
         let checkMission=window.confirm("Are you sure you want to abort the mission?");
